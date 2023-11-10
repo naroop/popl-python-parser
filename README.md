@@ -20,11 +20,14 @@ This project will parse Python files according to the specifications laid out in
    - `pip install -r requirements.txt`
 
 3. Run the program
-   - `python3 main.py ./testcases/deliv<x>.py`
-   - Replace `<x>` with the deliverable that is being tested.
+   - `python3 main.py ./testcases/deliv<n>.py`
+   - Replace `<n>` with the deliverable that is being tested.
+   - This will print the stringified tree.
 
 ---
 
 ### Additional
+
+View the GUI parse tree with `antlr4-parse python.g4 start -tree -gui ./testcases/deliv<n>.py`
 
 Rebuild the antlr files with `antlr4 -Dlanguage=Python3 python.g4`
