@@ -2,6 +2,8 @@
 
 `Nathaniel Rupp (ncrnkw)`
 
+#### [GitHub Link](https://github.com/naroop/popl-python-parser)
+
 This project will parse Python files according to the specifications laid out in the assignment document.
 
 ## Requirements
