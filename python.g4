@@ -88,12 +88,8 @@ comparison:
 		v_comparison_op v_comparison_statement
 	)*;
 
-if_statement: IF comparison COLON NEWLINE+;
-elif_statement: ELIF comparison COLON NEWLINE+;
-else_statement: ELSE COLON NEWLINE+;
-
-if_block: if_statement (TAB line)+;
-elif_block: elif_statement (TAB line)+;
-else_block: else_statement (TAB line)+;
+if_block: IF comparison COLON NEWLINE+ (TAB line)+;
+elif_block: ELIF comparison COLON NEWLINE+ (TAB line)+;
+else_block: ELSE COLON NEWLINE+ (TAB line)+;
 
 conditional: if_block elif_block* else_block?;
