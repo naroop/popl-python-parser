@@ -44,6 +44,24 @@ class pythonListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by pythonParser#v_comparison_op.
+    def enterV_comparison_op(self, ctx:pythonParser.V_comparison_opContext):
+        pass
+
+    # Exit a parse tree produced by pythonParser#v_comparison_op.
+    def exitV_comparison_op(self, ctx:pythonParser.V_comparison_opContext):
+        pass
+
+
+    # Enter a parse tree produced by pythonParser#v_comparison_statement.
+    def enterV_comparison_statement(self, ctx:pythonParser.V_comparison_statementContext):
+        pass
+
+    # Exit a parse tree produced by pythonParser#v_comparison_statement.
+    def exitV_comparison_statement(self, ctx:pythonParser.V_comparison_statementContext):
+        pass
+
+
     # Enter a parse tree produced by pythonParser#start.
     def enterStart(self, ctx:pythonParser.StartContext):
         pass
@@ -68,6 +86,15 @@ class pythonListener(ParseTreeListener):
 
     # Exit a parse tree produced by pythonParser#arithmetic.
     def exitArithmetic(self, ctx:pythonParser.ArithmeticContext):
+        pass
+
+
+    # Enter a parse tree produced by pythonParser#comparison.
+    def enterComparison(self, ctx:pythonParser.ComparisonContext):
+        pass
+
+    # Exit a parse tree produced by pythonParser#comparison.
+    def exitComparison(self, ctx:pythonParser.ComparisonContext):
         pass
 
 
