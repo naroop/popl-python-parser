@@ -8,6 +8,15 @@ else:
 # This class defines a complete listener for a parse tree produced by pythonParser.
 class pythonListener(ParseTreeListener):
 
+    # Enter a parse tree produced by pythonParser#v_negation.
+    def enterV_negation(self, ctx:pythonParser.V_negationContext):
+        pass
+
+    # Exit a parse tree produced by pythonParser#v_negation.
+    def exitV_negation(self, ctx:pythonParser.V_negationContext):
+        pass
+
+
     # Enter a parse tree produced by pythonParser#v_data.
     def enterV_data(self, ctx:pythonParser.V_dataContext):
         pass
@@ -62,12 +71,48 @@ class pythonListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by pythonParser#v_range.
+    def enterV_range(self, ctx:pythonParser.V_rangeContext):
+        pass
+
+    # Exit a parse tree produced by pythonParser#v_range.
+    def exitV_range(self, ctx:pythonParser.V_rangeContext):
+        pass
+
+
+    # Enter a parse tree produced by pythonParser#v_iterable.
+    def enterV_iterable(self, ctx:pythonParser.V_iterableContext):
+        pass
+
+    # Exit a parse tree produced by pythonParser#v_iterable.
+    def exitV_iterable(self, ctx:pythonParser.V_iterableContext):
+        pass
+
+
     # Enter a parse tree produced by pythonParser#start.
     def enterStart(self, ctx:pythonParser.StartContext):
         pass
 
     # Exit a parse tree produced by pythonParser#start.
     def exitStart(self, ctx:pythonParser.StartContext):
+        pass
+
+
+    # Enter a parse tree produced by pythonParser#line.
+    def enterLine(self, ctx:pythonParser.LineContext):
+        pass
+
+    # Exit a parse tree produced by pythonParser#line.
+    def exitLine(self, ctx:pythonParser.LineContext):
+        pass
+
+
+    # Enter a parse tree produced by pythonParser#statement.
+    def enterStatement(self, ctx:pythonParser.StatementContext):
+        pass
+
+    # Exit a parse tree produced by pythonParser#statement.
+    def exitStatement(self, ctx:pythonParser.StatementContext):
         pass
 
 
@@ -95,6 +140,69 @@ class pythonListener(ParseTreeListener):
 
     # Exit a parse tree produced by pythonParser#comparison.
     def exitComparison(self, ctx:pythonParser.ComparisonContext):
+        pass
+
+
+    # Enter a parse tree produced by pythonParser#if_block.
+    def enterIf_block(self, ctx:pythonParser.If_blockContext):
+        pass
+
+    # Exit a parse tree produced by pythonParser#if_block.
+    def exitIf_block(self, ctx:pythonParser.If_blockContext):
+        pass
+
+
+    # Enter a parse tree produced by pythonParser#elif_block.
+    def enterElif_block(self, ctx:pythonParser.Elif_blockContext):
+        pass
+
+    # Exit a parse tree produced by pythonParser#elif_block.
+    def exitElif_block(self, ctx:pythonParser.Elif_blockContext):
+        pass
+
+
+    # Enter a parse tree produced by pythonParser#else_block.
+    def enterElse_block(self, ctx:pythonParser.Else_blockContext):
+        pass
+
+    # Exit a parse tree produced by pythonParser#else_block.
+    def exitElse_block(self, ctx:pythonParser.Else_blockContext):
+        pass
+
+
+    # Enter a parse tree produced by pythonParser#conditional.
+    def enterConditional(self, ctx:pythonParser.ConditionalContext):
+        pass
+
+    # Exit a parse tree produced by pythonParser#conditional.
+    def exitConditional(self, ctx:pythonParser.ConditionalContext):
+        pass
+
+
+    # Enter a parse tree produced by pythonParser#while_block.
+    def enterWhile_block(self, ctx:pythonParser.While_blockContext):
+        pass
+
+    # Exit a parse tree produced by pythonParser#while_block.
+    def exitWhile_block(self, ctx:pythonParser.While_blockContext):
+        pass
+
+
+    # Enter a parse tree produced by pythonParser#for_block.
+    def enterFor_block(self, ctx:pythonParser.For_blockContext):
+        pass
+
+    # Exit a parse tree produced by pythonParser#for_block.
+    def exitFor_block(self, ctx:pythonParser.For_blockContext):
+        pass
+
+
+    # Enter a parse tree produced by pythonParser#loop.
+    def enterLoop(self, ctx:pythonParser.LoopContext):
+        pass
+
+    # Exit a parse tree produced by pythonParser#loop.
+    def exitLoop(self, ctx:pythonParser.LoopContext):
         pass
 
 
